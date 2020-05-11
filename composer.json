@@ -1,0 +1,21 @@
+{
+    "name": "panychek/fba",
+    "require": {
+        "php": "^7.2",
+        "brickfox/mws": "^0.0.11"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "vimeo/psalm": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Panychek\\Fba\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Panychek\\Fba\\Test\\": "tests/"
+        }
+    }
+}

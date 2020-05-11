@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  php:
+    build: ./
+    volumes:
+      - ./:/var/mws
+    environment:
+      AWS_ACCESS_KEY_ID: test_key_id
+      AWS_SECRET_ACCESS_KEY: test_key
+      SERVICE_URL: https://mws.amazonservices.com
+      SELLER_ID: test_seller_id
+    tty: true
+    stdin_open: true
